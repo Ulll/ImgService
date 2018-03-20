@@ -1,0 +1,20 @@
+{
+    "name": "papajo/imgservice",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jo",
+            "email": "mod@heiljo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "papajo/tmtpost": "*",
+        "aliyuncs/oss-sdk-php": "^2.3",
+        "qiniu/php-sdk": "7.*"
+    },
+	"autoload":{
+        "psr-4": {"ImgService\\": "src"}
+    }
+}
