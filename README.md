@@ -47,7 +47,7 @@ array(2) {
     ["url"]=>
     string(97) "http://test.oss-cn-qingdao.aliyuncs.com/test/1.png?x-oss-process=image/resize,m_lfit,w_100"
     ["height"]=>
-    string(3) "100"git 
+    string(3) "100"
     ["width"]=>
     string(3) "100"
   }
