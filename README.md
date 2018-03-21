@@ -17,8 +17,15 @@ require __DIR__ . '/vendor/autoload.php';
 use ImgService\ImgService;
 use ImgService\Drivers\OssDriver;
 
-$oss = new OssDriver('*************', '*****************', 'oss-cn-qingdao.aliyuncs.com');
-$oss->setBucket('*****')->setWebhost('http://*******.oss-cn-qingdao.aliyuncs.com');
+$driver = new OssDriver('*************', '*****************', 'oss-cn-qingdao.aliyuncs.com');
+$driver->setBucket('test')->setWebhost('http://test.oss-cn-qingdao.aliyuncs.com');
+
+//$driver = new QiniuDriver('accessKey', 'accessSecret');
+//$driver->setBucket('test');
+
+//$driver = new LocalDriver('storePath');
+//$driver->setBucket('test');
+
 $serv = new ImgService($oss);
 $filename = '/test/1.png';
 $content  = file_get_contents('/Users/xy/Desktop/1.png');
@@ -27,6 +34,7 @@ $b = $serv->reszieArray($filename, ["200","100"]);
 $c = $serv->getInfo($filename);
 var_dump($a,$b,$c);exit;
 ```
+
 
 #### Response
 
