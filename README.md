@@ -26,7 +26,7 @@ $driver->setBucket('test')->setWebhost('http://test.oss-cn-qingdao.aliyuncs.com'
 //$driver = new LocalDriver('storePath');
 //$driver->setBucket('test');
 
-$serv = new ImgService($oss);
+$serv = new ImgService($driver);
 $filename = '/test/1.png';
 $content  = file_get_contents('/Users/xy/Desktop/1.png');
 $a = $serv->putObjectStream($filename, $content);
